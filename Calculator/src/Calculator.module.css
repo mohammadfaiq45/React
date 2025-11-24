@@ -1,14 +1,15 @@
-
-/* Calculator styling */
+/* Calculator.module.css */
 .calculator {
   width: 300px;
   padding: 20px;
   background: #1f1f1f;
   border-radius: 12px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* keep content aligned horizontally */
 }
 
-/* Display screen */
 .display {
   background: #000;
   color: #0f0;
@@ -18,33 +19,33 @@
   border-radius: 8px;
   margin-bottom: 20px;
   font-family: "Courier New", monospace;
+  width: 100%;
   border: 2px solid #333;
+  box-sizing: border-box;
 }
 
-/* Buttons grid */
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
+  width: 100%;
 }
 
-/* Button styling */
 .btn {
   padding: 18px;
   font-size: 18px;
   background: #333;
-  color: white;
+  color: #fff;
   border: none;
   border-radius: 8px;
-  transition: 0.2s;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .btn:hover {
   background: #444;
 }
 
-/* Operator buttons */
 .op {
   background: #ff8c00;
 }
@@ -53,7 +54,6 @@
   background: #e67e00;
 }
 
-/* Equal button */
 .equal {
   background: #00b300;
 }
@@ -61,9 +61,3 @@
 .equal:hover {
   background: #009900;
 }
-.calculator .container {
-  padding: 0;
-  max-width: 100%;
-}
-
-

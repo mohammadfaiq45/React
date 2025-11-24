@@ -1,8 +1,8 @@
-/* This centers everything perfectly */
+/* app.module.css */
 .appContainer {
   display: flex;
-  justify-content: center; /* horizontal center */
-  align-items: center;     /* vertical center */
-  height: 100vh;           /* full viewport height */
-  background-color: #f5f5f5; /* optional background */
+  justify-content: center;   /* horizontal center */
+  align-items: center;       /* vertical center */
+  height: 100vh;             /* full screen height */
+  background-color: #f5f5f5;
 }
